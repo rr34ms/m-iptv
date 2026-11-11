@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0b0f" />
+    <meta name="description" content="M-IPTV : un lecteur IPTV simple pour Windows. Télévision en direct, films et séries à partir de votre propre abonnement." />
+    <title>Télécharger M-IPTV pour Windows</title>
+    <style>
+      :root { --bg: #0b0b0f; --surface: #141419; --line: rgba(255, 255, 255, 0.12); --text: #f3f2f7; --text-2: #b6b3c2; --accent: #8818f2; --accent-text: #b689ff; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--bg); color: var(--text); font: 18px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+      main { max-width: 760px; margin: 0 auto; padding: 56px 24px 72px; }
+      h1 { font-size: 44px; line-height: 1.15; margin: 0 0 12px; letter-spacing: -0.01em; }
+      h2 { font-size: 24px; margin: 48px 0 16px; }
+      p { margin: 0 0 16px; color: var(--text-2); }
+      .lead { font-size: 21px; }
+      .download { display: inline-block; margin: 20px 0 8px; padding: 18px 32px; border-radius: 8px; background: var(--accent); color: #fff; font-size: 21px; font-weight: 700; text-decoration: none; }
+      .download:hover, .download:focus { background: #9b3df5; }
+      .small { font-size: 15px; }
+      ol { margin: 0; padding: 0; list-style: none; counter-reset: step; }
+      ol li { counter-increment: step; position: relative; margin-bottom: 12px; padding: 18px 20px 18px 68px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); }
+      ol li::before { content: counter(step); position: absolute; left: 18px; top: 18px; width: 34px; height: 34px; border-radius: 8px; background: var(--accent); color: #fff; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+      ol li strong { color: var(--text); }
+      ol li span { display: block; color: var(--text-2); font-size: 16px; margin-top: 4px; }
+      .note { padding: 18px 20px; border-radius: 10px; border: 1px solid var(--line); border-left: 4px solid var(--accent); background: var(--surface); }
+      .note p:last-child { margin: 0; }
+      a { color: var(--accent-text); }
+      footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 15px; color: var(--text-2); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>M-IPTV pour Windows</h1>
+      <p class="lead">Un lecteur simple pour regarder la télévision, les films et les séries de <strong style="color: var(--text)">votre propre abonnement</strong>, sur votre ordinateur.</p>
+      <a id="download" class="download" href="M-IPTV-Windows.zip">Télécharger M-IPTV</a>
+      <p class="small">Windows 10 ou 11 (64 bits) · gratuit · environ 215 Mo · <a id="releases" href="#">toutes les versions</a></p>
+
+      <h2>Installer en 4 étapes</h2>
+      <ol>
+        <li><strong>Téléchargez</strong> le fichier avec le bouton violet.<span>Il arrive dans votre dossier « Téléchargements » sous le nom M-IPTV-Windows.zip.</span></li>
+        <li><strong>Clic droit sur le fichier → « Extraire tout… » → « Extraire ».</strong><span>Un dossier « M-IPTV-Windows » s’ouvre. N’installez pas directement depuis le fichier zip.</span></li>
+        <li><strong>Double-cliquez sur « Installer M-IPTV ».</strong><span>Si Windows demande confirmation : « Exécuter », ou « Informations complémentaires » puis « Exécuter quand même ». Voir l’explication ci-dessous.</span></li>
+        <li><strong>Attendez « C’est installé ! »</strong> (1 à 3 minutes).<span>M-IPTV s’ouvre toute seule, et une icône « M-IPTV » apparaît sur le Bureau. Vous pouvez supprimer le dossier téléchargé.</span></li>
+      </ol>
+
+      <h2>Première ouverture</h2>
+      <p>M-IPTV ne contient aucune chaîne. Au premier lancement, indiquez l’adresse du serveur, l’identifiant et le mot de passe donnés par votre fournisseur (ou collez le lien de votre liste). C’est tout.</p>
+
+      <h2>Pourquoi Windows affiche-t-il un avertissement ?</h2>
+      <div class="note">
+        <p>Windows affiche ce message pour tout programme gratuit qui n’a pas acheté de « signature » payante auprès de Microsoft. Cela ne veut pas dire qu’il est dangereux, seulement que Windows ne connaît pas encore son éditeur.</p>
+        <p>M-IPTV s’installe dans votre dossier personnel, sans droits administrateur, et se désinstalle avec « Desinstaller M-IPTV » dans le dossier téléchargé.</p>
+      </div>
+
+      <h2>Vie privée</h2>
+      <p>Vos identifiants, vos favoris et votre historique restent sur votre ordinateur. M-IPTV ne se connecte qu’au serveur de votre fournisseur ; il n’envoie aucune statistique.</p>
+
+      <footer>
+        <p>M-IPTV est un lecteur : il ne fournit aucune chaîne, aucun film ni aucune série. Vous êtes responsable des contenus que vous regardez ; n’utilisez que des sources que vous avez le droit d’utiliser.</p>
+        <p>M-IPTV utilise FFmpeg (licence GPLv3), Electron et d’autres logiciels libres ; le détail est dans le fichier LICENCES.txt du téléchargement.</p>
+      </footer>
+    </main>
+    <script>
+      // Hébergée sur GitHub Pages (compte.github.io/depot), la page pointe seule vers la dernière version publiée.
+      (function () {
+        var m = /^([a-z0-9-]+)\.github\.io$/i.exec(location.hostname);
+        var repo = location.pathname.split('/').filter(Boolean)[0];
+        if (!m || !repo) return;
+        var base = 'https://github.com/' + m[1] + '/' + repo + '/releases';
+        document.getElementById('download').href = base + '/latest/download/M-IPTV-Windows.zip';
+        document.getElementById('releases').href = base;
+      })();
+    </script>
+  </body>
+</html>
