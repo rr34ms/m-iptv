@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr" data-root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0b0f" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.github.com https://vqxewdwjksglkuowdojb.supabase.co; form-action 'self'; base-uri 'none'; object-src 'none'" />
+    <title>Administration — M-IPTV</title>
+    <script type="module" crossorigin src="../assets/admin-4dL_2iDW.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/common-CrKXlPpq.js">
+    <link rel="stylesheet" crossorigin href="../assets/common-CYlf_Sle.css">
+  </head>
+  <body>
+    <header id="site-header"></header>
+    <main class="wide" id="page">
+      <h1>Administration</h1>
+      <div id="global" class="message" aria-live="polite">Vérification de vos droits…</div>
+
+      <div id="admin" hidden>
+        <section class="card">
+          <form id="search" class="actions" role="search" style="display: flex">
+            <label style="flex: 1">Rechercher un client
+              <input id="query" type="search" placeholder="adresse e-mail" maxlength="120" />
+            </label>
+            <button class="btn" type="submit" style="align-self: end">Rechercher</button>
+          </form>
+          <table aria-label="Clients">
+            <thead>
+              <tr><th>E-mail</th><th>Créé le</th><th>Compte</th><th>Abonnement</th><th>Contenus</th></tr>
+            </thead>
+            <tbody id="users"></tbody>
+          </table>
+        </section>
+
+        <div class="grid" id="detail" hidden>
+          <section class="card">
+            <h2 id="d-email">Client</h2>
+            <dl class="facts" id="d-facts"></dl>
+            <div class="actions"><button class="btn btn-danger" type="button" id="d-status">Suspendre l’accès</button></div>
+            <h2 style="margin-top: 24px">Appareils</h2>
+            <ul class="list" id="d-devices"></ul>
+          </section>
+
+          <section class="card">
+            <h2>Abonnement</h2>
+            <form id="sub-form" novalidate>
+              <label>Formule <input id="s-plan" required maxlength="60" placeholder="ex. Famille 12 mois" /></label>
+              <label>Début <input id="s-start" type="date" /></label>
+              <label>Fin (vide = sans fin) <input id="s-end" type="date" /></label>
+              <label>Appareils autorisés <input id="s-devices" type="number" min="1" max="10" value="1" /></label>
+              <label>Statut
+                <select id="s-status"><option value="active">Actif</option><option value="suspended">Suspendu</option></select>
+              </label>
+              <div class="actions">
+                <button class="btn btn-primary" type="submit">Enregistrer l’abonnement</button>
+                <button class="btn btn-danger" type="button" id="s-cancel">Désactiver</button>
+              </div>
+            </form>
+          </section>
+
+          <section class="card">
+            <h2>Contenus associés</h2>
+            <p id="src-current" class="small"></p>
+            <form id="src-form" novalidate>
+              <label>Type
+                <select id="src-kind"><option value="xtream">Xtream Codes (serveur + identifiants)</option><option value="m3u">Lien M3U</option></select>
+              </label>
+              <div id="src-xtream">
+                <label>Adresse du serveur <input id="src-server" autocomplete="off" maxlength="300" /></label>
+                <label>Identifiant <input id="src-user" autocomplete="off" maxlength="120" /></label>
+                <label>Mot de passe <span class="password"><input id="src-pass" type="password" autocomplete="new-password" maxlength="120" /></span></label>
+              </div>
+              <label id="src-m3u" hidden>Lien M3U <input id="src-url" autocomplete="off" maxlength="2000" /></label>
+              <label>Libellé (visible par le client) <input id="src-label" maxlength="80" placeholder="ex. Offre Famille" /></label>
+              <label class="check"><input type="checkbox" id="src-rights" /> <span>Je confirme que la distribution de cette source par M-IPTV à ce client est autorisée par son fournisseur (droits de diffusion, nombre de connexions).</span></label>
+              <div class="actions">
+                <button class="btn btn-primary" type="submit">Associer</button>
+                <button class="btn" type="button" id="src-check">Vérifier</button>
+                <button class="btn btn-danger" type="button" id="src-revoke">Révoquer</button>
+              </div>
+            </form>
+            <p class="small muted">La configuration est chiffrée côté serveur et n’est plus jamais affichée ici.</p>
+          </section>
+
+          <section class="card">
+            <h2>Historique</h2>
+            <ul class="list small" id="d-events"></ul>
+          </section>
+        </div>
+        <div id="d-message" class="message" aria-live="polite"></div>
+      </div>
+    </main>
+  </body>
+</html>

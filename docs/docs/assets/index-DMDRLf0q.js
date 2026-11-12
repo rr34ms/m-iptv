@@ -1,0 +1,1 @@
+import{c as e,t}from"./common-CrKXlPpq.js";e(`accueil`);var n=`https://github.com/${t}/releases`,r=document.getElementById(`download`),i=document.getElementById(`releases`);r&&(r.href=`${n}/latest/download/M-IPTV-Windows.zip`),i&&(i.href=n);
