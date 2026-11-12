@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr" data-root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0b0f" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.github.com https://vqxewdwjksglkuowdojb.supabase.co; form-action 'self'; base-uri 'none'; object-src 'none'" />
+    <title>Mon compte — M-IPTV</title>
+    <script type="module" crossorigin src="../assets/compte-B0tXzzYo.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/common-CrKXlPpq.js">
+    <link rel="stylesheet" crossorigin href="../assets/common-CYlf_Sle.css">
+  </head>
+  <body>
+    <header id="site-header"></header>
+    <main class="wide" id="page">
+      <h1>Mon compte</h1>
+      <div id="global" class="message" aria-live="polite">Chargement…</div>
+
+      <div class="grid" id="dashboard" hidden>
+        <section class="card" aria-labelledby="t-profil">
+          <h2 id="t-profil">Mon profil</h2>
+          <dl class="facts">
+            <dt>Adresse e-mail</dt>
+            <dd id="email">—</dd>
+            <dt>Compte créé le</dt>
+            <dd id="created">—</dd>
+          </dl>
+          <div class="actions">
+            <button class="btn" type="button" id="show-password">Changer le mot de passe</button>
+            <button class="btn btn-danger" type="button" id="logout">Se déconnecter</button>
+          </div>
+          <form id="password-form" hidden novalidate style="margin-top: 16px">
+            <label>Mot de passe actuel
+              <span class="password"><input id="current" type="password" autocomplete="current-password" required maxlength="72" /></span>
+            </label>
+            <label>Nouveau mot de passe
+              <span class="password"><input id="new" type="password" autocomplete="new-password" required maxlength="72" /></span>
+              <span class="hint">10 caractères au moins, avec au moins une lettre et un chiffre.</span>
+            </label>
+            <div id="password-message" class="message" aria-live="polite"></div>
+            <button class="btn btn-primary" type="submit" id="save-password">Enregistrer</button>
+          </form>
+        </section>
+
+        <section class="card" aria-labelledby="t-abo">
+          <h2 id="t-abo">Mon abonnement</h2>
+          <div id="subscription"></div>
+        </section>
+
+        <section class="card" aria-labelledby="t-app">
+          <h2 id="t-app">Mes appareils</h2>
+          <p class="small" id="devices-count"></p>
+          <ul class="list" id="devices"></ul>
+          <div id="devices-message" class="message" aria-live="polite"></div>
+        </section>
+
+        <section class="card" aria-labelledby="t-dl">
+          <h2 id="t-dl">Téléchargements</h2>
+          <ul class="list platforms" id="downloads"></ul>
+          <p class="small muted">Ouvrez l’application et choisissez « Se connecter avec M-IPTV » avec la même adresse et le même mot de passe.</p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

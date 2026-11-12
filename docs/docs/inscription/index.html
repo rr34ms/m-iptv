@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr" data-root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0b0f" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.github.com https://vqxewdwjksglkuowdojb.supabase.co; form-action 'self'; base-uri 'none'; object-src 'none'" />
+    <title>Créer un compte — M-IPTV</title>
+    <script type="module" crossorigin src="../assets/inscription-CnAzrjym.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/common-CrKXlPpq.js">
+    <link rel="stylesheet" crossorigin href="../assets/common-CYlf_Sle.css">
+  </head>
+  <body>
+    <header id="site-header"></header>
+    <main class="narrow">
+      <h1>Créer un compte</h1>
+      <p>Gratuit. Un compte ne donne pas accès à des chaînes par lui-même : il permet de retrouver dans l’application l’offre associée à votre compte, s’il y en a une.</p>
+      <form id="form" class="card" novalidate>
+        <label>Adresse e-mail
+          <input id="email" type="email" autocomplete="email" required maxlength="254" />
+        </label>
+        <label>Mot de passe
+          <span class="password"><input id="password" type="password" autocomplete="new-password" required minlength="10" maxlength="72" /></span>
+          <span class="hint">10 caractères au moins, avec au moins une lettre et un chiffre.</span>
+        </label>
+        <label>Confirmez le mot de passe
+          <span class="password"><input id="password2" type="password" autocomplete="new-password" required maxlength="72" /></span>
+        </label>
+        <div id="message" class="message" aria-live="polite"></div>
+        <button class="btn btn-primary" type="submit" id="submit">Créer mon compte</button>
+        <div class="links">
+          <a href="../connexion/">J’ai déjà un compte</a>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
