@@ -4,52 +4,66 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0b0b0f" />
-    <meta name="description" content="M-IPTV : un lecteur IPTV simple pour Windows. Télévision en direct, films et séries à partir de votre propre abonnement." />
+    <meta name="description" content="M-IPTV pour Windows : télévision en direct, films et séries avec un abonnement M-IPTV." />
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.github.com https://vqxewdwjksglkuowdojb.supabase.co; form-action 'self'; base-uri 'none'; object-src 'none'" />
     <title>Télécharger M-IPTV pour Windows</title>
-    <script type="module" crossorigin src="./assets/index-DMDRLf0q.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/common-CrKXlPpq.js">
+    <script type="module" crossorigin src="./assets/index-vYmtCbFA.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/common-DdGhovax.js">
     <link rel="stylesheet" crossorigin href="./assets/common-CYlf_Sle.css">
   </head>
   <body>
     <header id="site-header"></header>
     <main>
       <h1>M-IPTV pour Windows</h1>
-      <p class="lead">Un lecteur simple pour regarder la télévision, les films et les séries de <strong style="color: var(--text)">votre propre abonnement</strong>, sur votre ordinateur.</p>
-      <a id="download" class="download" href="M-IPTV-Windows.zip">Télécharger M-IPTV</a>
-      <p class="small">Windows 10 ou 11 (64 bits) · gratuit · environ 215 Mo · <a id="releases" href="#">toutes les versions</a></p>
+      <p class="lead">Regardez la télévision, les films et les séries sur votre ordinateur avec votre <strong style="color: var(--text)">abonnement M-IPTV</strong>.</p>
+      <p class="small">L’application est réservée aux abonnés : il faut un <a href="./inscription/">compte M-IPTV</a> avec un abonnement actif pour l’utiliser.</p>
+      <a id="download" class="download" href="https://github.com/rr34ms/m-iptv/releases">Télécharger pour Windows</a>
+      <p class="small">Windows 10 / 11 (64 bits) · abonnement M-IPTV requis · <span id="size">environ 175 Mo</span> · <a id="releases" href="https://github.com/rr34ms/m-iptv/releases">toutes les versions</a></p>
+      <p id="zip-option" class="small" hidden>Windows bloque l’installateur ? <a id="download-zip" href="https://github.com/rr34ms/m-iptv/releases">Télécharger la version zip</a> (<span id="zip-size">zip</span>) · <a href="#si-bloque">comment l’installer</a></p>
 
       <section>
-        <h2>Installer en 4 étapes</h2>
+        <h2>Installer en 3 étapes</h2>
         <ol class="steps">
-          <li><strong>Téléchargez</strong> le fichier avec le bouton violet.<span>Il arrive dans votre dossier « Téléchargements » sous le nom M-IPTV-Windows.zip.</span></li>
-          <li><strong>Clic droit sur le fichier → « Extraire tout… » → « Extraire ».</strong><span>Un dossier « M-IPTV-Windows » s’ouvre. N’installez pas directement depuis le fichier zip.</span></li>
-          <li><strong>Double-cliquez sur « Installer M-IPTV ».</strong><span>Si Windows demande confirmation : « Exécuter », ou « Informations complémentaires » puis « Exécuter quand même ». Voir l’explication ci-dessous.</span></li>
-          <li><strong>Attendez « C’est installé ! »</strong> (1 à 3 minutes).<span>M-IPTV s’ouvre toute seule, et une icône « M-IPTV » apparaît sur le Bureau. Vous pouvez supprimer le dossier téléchargé.</span></li>
+          <li><strong>Téléchargez</strong> l’installateur avec le bouton violet.<span>Il arrive dans votre dossier « Téléchargements » sous le nom M-IPTV-Setup.exe.</span></li>
+          <li><strong>Double-cliquez sur M-IPTV-Setup.exe</strong> et suivez l’assistant.<span>Pas d’archive à extraire, pas de script : l’installation se fait dans votre dossier personnel, sans droits administrateur. Si Windows affiche un avertissement, voir l’explication ci-dessous.</span></li>
+          <li><strong>Lancez M-IPTV</strong> à la fin de l’installation.<span>Vous le retrouvez ensuite dans le menu Démarrer et sur le Bureau.</span></li>
         </ol>
       </section>
 
       <section>
-        <h2>Première ouverture</h2>
-        <p>Connectez-vous avec votre <strong style="color: var(--text)">compte M-IPTV</strong> (le même que sur ce site), ou indiquez l’adresse du serveur, l’identifiant et le mot de passe donnés par votre fournisseur, ou collez le lien de votre liste. Les trois méthodes restent disponibles.</p>
+        <h2>S’abonner et se connecter</h2>
+        <ol class="steps">
+          <li><strong><a href="./inscription/">Créez votre compte M-IPTV</a></strong> sur ce site.<span>Adresse e-mail et mot de passe, puis confirmez votre adresse avec le lien reçu par e-mail.</span></li>
+          <li><strong>Votre abonnement est activé</strong> sur votre compte.<span>Sa formule, sa date de fin et le nombre d’appareils autorisés apparaissent dans <a href="./mon-compte/">Mon compte</a>.</span></li>
+          <li><strong>Ouvrez M-IPTV et connectez-vous</strong> avec l’adresse e-mail et le mot de passe de votre compte.<span>Vos chaînes, films et séries se chargent automatiquement. C’est la seule façon de se connecter : l’application n’accepte ni lien de liste ni identifiants d’un autre service.</span></li>
+        </ol>
       </section>
 
       <section>
         <h2>Pourquoi Windows affiche-t-il un avertissement ?</h2>
         <div class="note">
-          <p>Windows affiche ce message pour tout programme gratuit qui n’a pas acheté de « signature » payante auprès de Microsoft. Cela ne veut pas dire qu’il est dangereux, seulement que Windows ne connaît pas encore son éditeur.</p>
-          <p>M-IPTV s’installe dans votre dossier personnel, sans droits administrateur, et se désinstalle avec « Desinstaller M-IPTV » dans le dossier téléchargé.</p>
+          <p>Windows affiche ce message pour tout programme qui n’a pas encore de « signature » payante reconnue par Microsoft. Cela ne veut pas dire qu’il est dangereux, seulement que Windows ne connaît pas encore son éditeur.</p>
+          <p>Tant que M-IPTV n’a pas de signature, Windows SmartScreen peut afficher « Windows a protégé votre ordinateur » : « Informations complémentaires », puis « Exécuter quand même ». Sur un PC où le « Contrôle intelligent des applications » de Windows 11 est actif, un installateur non signé est bloqué, sans bouton pour continuer : utilisez alors la version zip (ci-dessous) en attendant qu’M-IPTV soit signé. Ne désactivez pas cette protection. M-IPTV se désinstalle comme toute application : Paramètres → Applications → M-IPTV → Désinstaller. Vos favoris et réglages sont conservés, sauf si vous demandez leur suppression.</p>
         </div>
+      </section>
+
+      <section id="si-bloque">
+        <h2>Si Windows bloque l’installateur : la version zip</h2>
+        <ol class="steps">
+          <li><strong>Téléchargez la version zip</strong> avec le lien sous le bouton violet.<span>Le fichier s’appelle M-IPTV-Windows.zip. Le lien n’apparaît que si cette version est publiée.</span></li>
+          <li><strong>Clic droit sur le zip → « Extraire tout… »</strong>, puis ouvrez le dossier obtenu.<span>Ne lancez rien depuis l’intérieur du zip sans l’avoir extrait.</span></li>
+          <li><strong>Double-cliquez sur « Installer M-IPTV »</strong>.<span>M-IPTV est copié dans votre dossier personnel, avec ses raccourcis Bureau et menu Démarrer. Si le Contrôle intelligent des applications est actif, M-IPTV s’ouvre dans une fenêtre Microsoft Edge, avec les mêmes fonctions. Pour le retirer : « Desinstaller M-IPTV » dans le même dossier. Plus tard, vous pourrez passer à l’installateur : vos favoris et réglages seront conservés.</span></li>
+        </ol>
       </section>
 
       <section>
         <h2>Vie privée</h2>
-        <p>Vos favoris et votre historique restent sur votre ordinateur. Sans compte M-IPTV, l’application ne se connecte qu’au serveur de votre fournisseur. Avec un compte, elle contacte en plus le service M-IPTV pour vérifier votre abonnement. Aucune statistique n’est envoyée.</p>
+        <p>Vos favoris et votre historique restent sur votre ordinateur. L’application contacte le service M-IPTV pour vérifier votre compte et votre abonnement, puis le serveur des contenus de votre offre. Aucune statistique n’est envoyée.</p>
       </section>
     </main>
     <footer>
-      <p>M-IPTV est un lecteur : il ne fournit aucune chaîne, aucun film ni aucune série en dehors des offres autorisées associées à un compte. Vous êtes responsable des contenus que vous regardez ; n’utilisez que des sources que vous avez le droit d’utiliser.</p>
-      <p>M-IPTV utilise FFmpeg (licence GPLv3), Electron et d’autres logiciels libres ; le détail est dans le fichier LICENCES.txt du téléchargement.</p>
+      <p>M-IPTV ne donne accès qu’aux contenus des offres associées à un compte M-IPTV, dont la diffusion est autorisée. Un compte sans abonnement actif ne donne accès à aucun contenu.</p>
+      <p>M-IPTV utilise FFmpeg (licence GPLv3), Electron et d’autres logiciels libres ; le détail est dans le fichier LICENCES.txt du dossier d’installation.</p>
     </footer>
   </body>
 </html>
