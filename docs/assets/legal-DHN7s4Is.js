@@ -1,0 +1,1 @@
+import{l as e}from"./common-CNL96VvY.js";e(`legal`);

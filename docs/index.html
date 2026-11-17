@@ -3,36 +3,221 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b0b0f" />
-    <meta name="description" content="M-IPTV pour Windows : télévision en direct, films et séries avec un abonnement M-IPTV." />
+    <meta name="theme-color" content="#08080b" />
+    <meta name="description" content="M-IPTV : chaînes TV, films, séries et sport en direct dans une expérience moderne et simple. Abonnements de 1 à 12 mois et application Windows." />
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://api.github.com https://vqxewdwjksglkuowdojb.supabase.co; form-action 'self'; base-uri 'none'; object-src 'none'" />
-    <title>Télécharger M-IPTV pour Windows</title>
-    <script type="module" crossorigin src="./assets/index-HBixVVED.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/common-DdGhovax.js">
-    <link rel="stylesheet" crossorigin href="./assets/common-CYlf_Sle.css">
+    <title>M-IPTV — Tout votre divertissement au même endroit</title>
+    <script type="module" crossorigin src="./assets/index-C3LPkzME.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/common-CNL96VvY.js">
+    <link rel="stylesheet" crossorigin href="./assets/common-D-gAKv5w.css">
   </head>
   <body>
     <header id="site-header"></header>
-    <main>
-      <h1>M-IPTV pour Windows</h1>
-      <p class="lead">La télévision, les films et les séries sur votre ordinateur, avec votre abonnement M-IPTV.</p>
-      <a id="download" class="download" href="https://github.com/rr34ms/m-iptv/releases/latest">Télécharger M-IPTV</a>
-      <p class="small">Windows 10 / 11 · <span id="size">dernière version</span></p>
+    <main class="home">
+      <!-- ============================================================ Hero -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <span class="eyebrow">Télévision · Films · Séries · Sport</span>
+            <h1>M-IPTV — <span>Tout votre divertissement au même endroit</span></h1>
+            <p class="lead">Retrouvez vos chaînes TV, films, séries et programmes sportifs dans une expérience moderne, simple et agréable.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-large" href="#abonnements">Voir les abonnements</a>
+              <a class="btn btn-large" href="./windows/">Découvrir M-IPTV Windows</a>
+            </div>
+            <ul class="hero-points">
+              <li>Abonnements de 1 à 12 mois</li>
+              <li>Application Windows à télécharger librement</li>
+              <li>Commande simple par e-mail</li>
+            </ul>
+          </div>
+          <figure class="shot" style="margin: 0">
+            <img src="./assets/app-accueil-DMQ8htDt.jpg" width="1400" height="356" alt="Écran d’accueil de l’application M-IPTV pour Windows : Live TV, Films, Séries et favoris" />
+            <figcaption>Capture de l’application M-IPTV pour Windows (contenus de démonstration).</figcaption>
+          </figure>
+        </div>
+      </section>
 
-      <section>
-        <h2>Comment installer</h2>
-        <ol class="steps">
-          <li><strong>Téléchargez</strong> avec le bouton violet.<span>Vous obtenez le fichier M-IPTV-Windows.zip dans « Téléchargements ».</span></li>
-          <li><strong>Clic droit sur le fichier → « Extraire tout… »</strong> → « Extraire ».<span>Un dossier M-IPTV-Windows s’ouvre.</span></li>
-          <li><strong>Double-cliquez sur « Installer M-IPTV »</strong>, puis attendez le message « C’est installé ! ».<span>Si Windows affiche « Windows a protégé votre ordinateur » : « Informations complémentaires » → « Exécuter quand même ».</span></li>
-          <li><strong>Connectez-vous</strong> avec l’e-mail et le mot de passe de votre compte M-IPTV.<span>Pas encore de compte ? <a href="./inscription/">Créez-le ici</a>. Il faut un abonnement actif pour regarder.</span></li>
-        </ol>
-        <p class="small">Ensuite, M-IPTV s’ouvre avec l’icône du Bureau.</p>
+      <!-- ============================================================ Abonnements -->
+      <section id="abonnements">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Abonnements</span>
+            <h2>Choisissez votre abonnement M-IPTV</h2>
+            <p>Une seule formule, quatre durées. Plus la durée est longue, plus le prix mensuel est doux.</p>
+          </div>
+          <div class="pricing" id="pricing"></div>
+          <p class="pricing-note">Prix en euros. Commande par e-mail, sans paiement en ligne : l’abonnement est activé sur votre compte après validation de la commande.</p>
+        </div>
+      </section>
+
+      <!-- ============================================================ Catalogues -->
+      <section id="catalogues">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Catalogues</span>
+            <h2>Un univers de divertissement à portée de main</h2>
+            <p>La télévision en direct, les films, les séries et le sport, réunis dans une seule application. Le contenu exact dépend de votre offre et des droits de diffusion qui y sont associés.</p>
+          </div>
+          <div class="features" id="categories"></div>
+          <div class="highlights" id="highlights" hidden></div>
+        </div>
+      </section>
+
+      <!-- ============================================================ Windows -->
+      <section id="windows">
+        <div class="container">
+          <div class="windows-offer">
+            <div>
+              <span class="badge-gold">Exclusivité PC Windows</span>
+              <h2 style="margin-top: 16px">M-IPTV Windows — Une expérience IPTV supérieure</h2>
+              <p>Découvrez une application IPTV conçue pour profiter pleinement de vos contenus sur ordinateur. Avec son interface moderne, ses outils d’organisation intelligents et son lecteur multimédia avancé, M-IPTV Windows vous offre une expérience plus complète, plus personnalisable et plus confortable qu’un lecteur IPTV basique.</p>
+              <div class="windows-price"><strong>+50 €</strong><span>Licence à vie</span></div>
+              <div class="actions" style="margin-top: 18px">
+                <button class="btn btn-primary btn-large" type="button" id="add-windows">Ajouter M-IPTV Windows — 50 €</button>
+                <a class="btn btn-ghost" href="./windows/">Télécharger gratuitement</a>
+              </div>
+              <div class="legal-box">
+                <strong>La licence à vie à 50 € concerne exclusivement l’application M-IPTV pour PC Windows.</strong>
+                <ul>
+                  <li>Elle ne comprend pas d’abonnement IPTV à vie : l’accès aux contenus nécessite un abonnement valide, distinct.</li>
+                  <li>Elle ne donne pas accès aux versions Android TV, Google TV, Android, iOS ou macOS.</li>
+                  <li>Les conditions exactes de la licence et des mises à jour sont précisées dans les <a href="./licence-windows/">conditions de licence</a>.</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h3 style="margin-bottom: 16px">Ce que vous apporte l’application</h3>
+              <ul class="checklist">
+                <li>Interface moderne, pensée pour le PC</li>
+                <li>Lecteur vidéo avancé</li>
+                <li>Chaînes TV en direct</li>
+                <li>Films et séries</li>
+                <li>Guide TV</li>
+                <li>Favoris</li>
+                <li>Historique</li>
+                <li>Reprise de lecture</li>
+                <li>Recherche intelligente</li>
+                <li>Clean Library : chaînes en double réunies</li>
+                <li>Choix de la qualité (versions HD, FHD…)</li>
+                <li>Conversion du son des flux non compatibles</li>
+                <li>Retour en arrière sur le direct</li>
+                <li>Télécommande depuis votre smartphone</li>
+                <li>Outils de diagnostic et centre de santé</li>
+                <li>Compte M-IPTV</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ Commande -->
+      <section id="commande">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Commande</span>
+            <h2>Composez votre commande</h2>
+            <p>Choisissez la durée, ajoutez si vous le souhaitez l’application Windows à vie, puis envoyez votre demande par e-mail. Aucun paiement n’est demandé sur ce site.</p>
+          </div>
+          <form class="order" id="order-form" novalidate>
+            <div class="card" style="margin: 0">
+              <fieldset>
+                <legend>Durée de l’abonnement</legend>
+                <div class="choices" id="plan-choices"></div>
+              </fieldset>
+              <fieldset style="margin: 0">
+                <legend>Option</legend>
+                <div class="choices">
+                  <label class="choice option">
+                    <input type="checkbox" id="opt-windows" />
+                    <span class="tick" aria-hidden="true">✓</span>
+                    <div>Application M-IPTV Windows — licence à vie<span>Logiciel pour PC Windows uniquement, sans abonnement inclus.</span></div>
+                    <b>+50 €</b>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+            <aside class="card summary" aria-labelledby="summary-title" style="margin: 0">
+              <h2 id="summary-title">Votre commande</h2>
+              <dl>
+                <dt id="sum-plan-label">Abonnement</dt>
+                <dd id="sum-plan">—</dd>
+                <dt>Licence M-IPTV Windows à vie</dt>
+                <dd id="sum-windows">—</dd>
+              </dl>
+              <div class="total"><span>Total</span><strong id="sum-total" aria-live="polite">—</strong></div>
+              <a class="btn btn-primary btn-large" id="order-mail" href="#commande">Commander par e-mail</a>
+              <div class="mail-line">
+                <span class="muted">Ou écrivez à</span>
+                <code id="order-address">m-iptv-fr@proton.me</code>
+                <button class="btn btn-small btn-ghost" type="button" id="copy-order">Copier l’adresse</button>
+              </div>
+              <p class="fine">L’envoi de cet e-mail n’est pas un paiement et n’active aucun abonnement. Nous vous répondons avec les étapes pour finaliser la commande ; l’abonnement est ensuite activé sur votre compte M-IPTV.</p>
+            </aside>
+          </form>
+        </div>
+      </section>
+
+      <!-- ============================================================ FAQ -->
+      <section id="faq">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">FAQ</span>
+            <h2>Questions fréquentes</h2>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>Comment commander ?</summary>
+              <p>Choisissez votre formule dans « Composez votre commande », puis cliquez sur « Commander par e-mail ». Votre messagerie s’ouvre avec un message prêt à envoyer. Vous pouvez aussi écrire directement à m-iptv-fr@proton.me.</p>
+            </details>
+            <details>
+              <summary>Comment recevoir mes accès ?</summary>
+              <p>Les modalités d’activation vous sont communiquées après validation de la commande. Votre abonnement est ensuite activé sur votre compte M-IPTV : il suffit de vous connecter dans l’application avec ce compte.</p>
+            </details>
+            <details>
+              <summary>Faut-il créer un compte ?</summary>
+              <p>Oui. Un compte M-IPTV est nécessaire pour accéder aux services commerciaux liés à un abonnement M-IPTV. <a href="./inscription/">Créer un compte</a> ne prend qu’une minute.</p>
+            </details>
+            <details>
+              <summary>L’application Windows est-elle gratuite à télécharger ?</summary>
+              <p>Oui, son téléchargement est libre, sans compte. L’utilisation des fonctions commerciales soumises à licence ou à abonnement nécessite les droits correspondants : télécharger l’application ne donne pas, à lui seul, accès aux contenus.</p>
+            </details>
+            <details>
+              <summary>Que comprend la licence Windows à vie ?</summary>
+              <p>Elle concerne exclusivement le logiciel M-IPTV pour PC Windows. Elle ne comprend aucun abonnement IPTV à vie et ne s’applique pas aux autres appareils.</p>
+            </details>
+            <details>
+              <summary>Quels appareils sont compatibles ?</summary>
+              <p id="faq-platforms">Aujourd’hui : les ordinateurs Windows 10 et 11 (64 bits). Les autres plateformes seront annoncées ici dès qu’elles seront disponibles.</p>
+            </details>
+            <details>
+              <summary>Quels contenus sont inclus ?</summary>
+              <p>Le catalogue dépend de l’offre et des droits de distribution qui y sont associés. Contactez-nous pour connaître le détail à jour avant de commander.</p>
+            </details>
+            <details>
+              <summary>Comment contacter M-IPTV ?</summary>
+              <p>Par e-mail : <a href="mailto:m-iptv-fr@proton.me">m-iptv-fr@proton.me</a>.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ Contact -->
+      <section id="contact">
+        <div class="container">
+          <div class="contact-card">
+            <div>
+              <h2>Une question avant de commander ?</h2>
+              <p>Écrivez-nous, nous vous répondons par e-mail.</p>
+            </div>
+            <div class="actions">
+              <a class="btn btn-primary" href="mailto:m-iptv-fr@proton.me">m-iptv-fr@proton.me</a>
+              <button class="btn" type="button" id="copy-contact">Copier l’adresse</button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
-      <p>M-IPTV ne donne accès qu’aux contenus des offres associées à un compte M-IPTV, dont la diffusion est autorisée. Un compte sans abonnement actif ne donne accès à aucun contenu.</p>
-      <p>M-IPTV utilise FFmpeg (licence GPLv3), Electron et d’autres logiciels libres ; le détail est dans le fichier LICENCES.txt du dossier d’installation.</p>
-    </footer>
+    <footer id="site-footer"></footer>
   </body>
 </html>
